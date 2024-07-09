@@ -5,8 +5,8 @@ function that returns the list of school having a specific topic
 import pymongo
 
 
-def schoolbytopic(mognocollection, topic):
+def schools_by_topic(mongo_collection, topic):
     """
     function that returns the list of school having a specific topic
     """
-    return mognocollection.find({"topics": topic})
+    return mongo_collection.find({"topics": topic})
