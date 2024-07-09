@@ -5,7 +5,7 @@ function that lists all documents in a collection
 import pymongo
 
 
-def listaall(mongo_collection):
+def list_all(mongo_collection):
     """
     function that lists all documents in a collection
     """
