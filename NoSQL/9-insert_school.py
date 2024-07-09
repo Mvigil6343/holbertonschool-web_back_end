@@ -5,8 +5,8 @@ function that inserts a new document in a collection based on kwargs
 import pymongo
 
 
-def insert(mognocollection, **kwargs):
+def insert(mongo_collection, **kwargs):
     """
     function that inserts a new document in a collection based on kwargs
     """
-    return mognocollection.insert_one(kwargs).insert_id
+    return mongo_collection.insert_one(kwargs).insert_id
