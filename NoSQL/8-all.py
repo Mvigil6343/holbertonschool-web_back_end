@@ -5,11 +5,11 @@ function that lists all documents in a collection
 import pymongo
 
 
-def listaall(mognocollection):
+def listaall(mongo_collection):
     """
     function that lists all documents in a collection
     """
-    listadocs = mognocollection.find()
+    listadocs = mongo_collection.find()
     if listadocs is None:
         return []
     return listadocs
